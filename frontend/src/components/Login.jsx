@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-// Recebemos a "ferramenta" onLoginSucesso vinda do App
+// Receber a "ferramenta" onLoginSucesso vinda do App
 function Login({ onLoginSucesso }) {
   const [email, setEmail] = useState("")
   const [senha, setSenha] = useState("")
@@ -17,7 +17,7 @@ function Login({ onLoginSucesso }) {
       const dados = await resposta.json()
       
       if (dados.sucesso) {
-        // Agora passamos o "dados.nome" que veio do Python
+        // Agora passa o "dados.nome" que veio do Python
         onLoginSucesso(dados.nome) 
       } else {
         setMensagem(dados.mensagem)
@@ -29,7 +29,7 @@ function Login({ onLoginSucesso }) {
   }
 
   return (
-    // 1. Criamos um container para agrupar Logo + Caixa Branca e centralizar
+    // 1. Cria um container para agrupar Logo + Caixa Branca e centralizar
     <div className="flex flex-col items-center">
       
       {/* 2. A Imagem da Logo */}
