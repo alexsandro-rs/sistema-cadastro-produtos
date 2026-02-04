@@ -17,7 +17,7 @@ def login():
     email = dados.get('email')
     senha = dados.get('senha')
 
-    # Verificação com seu novo usuário
+    # Verificação do usuário
     if email == "alexsandro@suamarca.com" and senha == "123":
         return jsonify({
             "mensagem": "Login aprovado!",
@@ -32,8 +32,6 @@ def login():
 def cadastrar_produto():
     dados = request.json
     
-    # Por enquanto, vamos apenas imprimir no terminal do Python para confirmar que chegou
-    # (Futuramente, é aqui que salvaríamos no banco de dados)
     print(f"Produto recebido: {dados}")
     
     return jsonify({"mensagem": "Produto cadastrado com sucesso!", "sucesso": True}), 201
