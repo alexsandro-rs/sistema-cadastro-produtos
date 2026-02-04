@@ -1,4 +1,4 @@
-import { useState } from "react" // Removemos o useEffect, pois não vamos mais buscar dados ao carregar
+import { useState } from "react" // Remove o useEffect
 import Login from "./components/Login"
 import CadastroProduto from "./components/CadastroProduto"
 // Removemos a importação da ListaProdutos aqui
