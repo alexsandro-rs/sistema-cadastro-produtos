@@ -1,14 +1,14 @@
 import { useState } from "react" // Remove o useEffect
 import Login from "./components/Login"
 import CadastroProduto from "./components/CadastroProduto"
-// Removemos a importação da ListaProdutos aqui
+// Remove a importação da ListaProdutos aqui (função futura)
 
 function App() {
   const [usuarioLogado, setUsuarioLogado] = useState(false)
   const [nomeUsuario, setNomeUsuario] = useState("") 
-  // Removemos o estado 'produtos'
+  // Remove o estado 'produtos' (função futura)
 
-  // Removemos a função 'buscarProdutos' e o 'useEffect'
+  // Remove a função 'buscarProdutos' e o 'useEffect' (função futura)
   // O formulário continua enviando para o Python, mas o App não se preocupa mais em ler a volta.
 
   const fazerLogout = () => {
@@ -27,9 +27,9 @@ function App() {
       {!usuarioLogado ? (
         <Login onLoginSucesso={handleLoginSucesso} />
       ) : (
-        // Removemos o fragmento (<>...</>) pois agora só temos um elemento filho
+        // Remove o fragmento (<>...</>) pois agora só temos um elemento filho
         <div className="w-full flex justify-center">
-            {/* Removemos a propriedade 'onProdutoCadastrado', pois não precisamos atualizar nada */}
+            {/* Remove a propriedade 'onProdutoCadastrado', pois não precisamos atualizar nada */}
             <CadastroProduto 
               nomeUsuario={nomeUsuario}
               onLogout={fazerLogout}
