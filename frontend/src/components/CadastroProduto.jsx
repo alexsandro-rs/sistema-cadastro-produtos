@@ -57,7 +57,6 @@ function CadastroProduto({ onProdutoCadastrado, nomeUsuario, onLogout }) {
   }
 
   return (
-    // (O código acima do return continua igual...)
 
     <div className="flex flex-col items-center w-full max-w-2xl">
       <img src="/logo.png" alt="Logo da Empresa" className="w-52 mb-8" />
