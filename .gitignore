@@ -1,0 +1,12 @@
+# Pastas do React (Node)
+node_modules/
+dist/
+
+# Pastas do Python
+venv/
+__pycache__/
+*.pyc
+
+# Arquivos de sistema e ambiente
+.DS_Store
+.env
